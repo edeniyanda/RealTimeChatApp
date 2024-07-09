@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
     <title>Chating</title>
 </head>
 <body>
     {% include 'base_css.html' %}
     <style type="text/css">
-         .main{
+        .main{
             min-height: 100vh;
             height: 100%;
-         }
-    </style>
+        }
+        </style>
+
+    {% include 'header.html' %}
 <div class="main">
     {% block content %}
     {% endblock content %}
 </div>
-<footer>
-    Footer
-</footer>
+{% include "footer.html" %}
 <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script>
 <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>

@@ -1,8 +1,21 @@
 {% extends "base.html" %}
 {% block content%}
 
-<div>
-    Home
+<style type="text/css">
+    .my-grid {
+        border: 1px solid black;
+    }
+    .my-grid-item{
+        border: 1px solid black;
+    }
+</style>
+
+<div class="container">
+    <div class="my-grid d-flex flex-row">
+        <p class="my-grid-item m-auto">Home</p>
+        <p class="my-grid-item m-auto">Blog</p>
+        <p class="my-grid-item m-auto">Post</p>
+    </div>
 </div>
 
 {% endblock content%}
